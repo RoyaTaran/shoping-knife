@@ -55,7 +55,7 @@ export default function RegisterForm() {
         userName: DataUsersContext.nameRegisterFormValue,
         email: DataUsersContext.emailRegisterFormValue,
         password: DataUsersContext.passwordRegisterFormValue,
-        post: "کاربر",
+        post: "مدیر",
         firstName: "",
         lastName: "",
         companyName: "",
@@ -71,7 +71,7 @@ export default function RegisterForm() {
       DataUsersContext.setNameRegisterFormValue("");
       DataUsersContext.setEmailRegisterFormValue("");
       DataUsersContext.setPasswordRegisterFormValue("");
-      fetch("https://aaaa-f46f5-default-rtdb.firebaseio.com//users.json", {
+      fetch("https://shoping-dc97f-default-rtdb.firebaseio.com//users.json", {
         method: "POST",
         body: JSON.stringify(NewUserRegisterObj),
       }).then((response) => {
@@ -97,7 +97,7 @@ export default function RegisterForm() {
         }
       });
 
-      fetch("https://aaaa-f46f5-default-rtdb.firebaseio.com//users.json")
+      fetch("https://shoping-dc97f-default-rtdb.firebaseio.com//users.json")
         .then((res) => res.json())
         .then((data) => {
           if (data) {

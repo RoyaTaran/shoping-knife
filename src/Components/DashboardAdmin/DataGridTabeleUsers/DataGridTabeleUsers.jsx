@@ -17,7 +17,7 @@ export default function UsersComponent() {
   const [showeditmodal, setShowEditmodal] = useState(false);
 
   const { posts } = useFetch(
-    "https://aaaa-f46f5-default-rtdb.firebaseio.com//users.json",
+    "https://shoping-dc97f-default-rtdb.firebaseio.com//users.json",
     DataUsersContext.getuserData
   );
 
@@ -29,7 +29,7 @@ export default function UsersComponent() {
 
   let removeuser = async () => {
     await fetch(
-      `https://aaaa-f46f5-default-rtdb.firebaseio.com//users/${userId}.json`,
+      `https://shoping-dc97f-default-rtdb.firebaseio.com//users/${userId}.json`,
       {
         method: "DELETE",
       }
