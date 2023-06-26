@@ -55,7 +55,7 @@ export default function RegisterForm() {
         userName: DataUsersContext.nameRegisterFormValue,
         email: DataUsersContext.emailRegisterFormValue,
         password: DataUsersContext.passwordRegisterFormValue,
-        post: "مدیر",
+        post: "کاربر",
         firstName: "",
         lastName: "",
         companyName: "",
