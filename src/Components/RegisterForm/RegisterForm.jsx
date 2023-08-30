@@ -71,7 +71,7 @@ export default function RegisterForm() {
       DataUsersContext.setNameRegisterFormValue("");
       DataUsersContext.setEmailRegisterFormValue("");
       DataUsersContext.setPasswordRegisterFormValue("");
-      fetch("https://shoping-dc97f-default-rtdb.firebaseio.com//users.json", {
+      fetch("https://knifestore-83da9-default-rtdb.firebaseio.com/users.json", {
         method: "POST",
         body: JSON.stringify(NewUserRegisterObj),
       }).then((response) => {
@@ -97,7 +97,7 @@ export default function RegisterForm() {
         }
       });
 
-      fetch("https://shoping-dc97f-default-rtdb.firebaseio.com//users.json")
+      fetch("https://knifestore-83da9-default-rtdb.firebaseio.com/users.json")
         .then((res) => res.json())
         .then((data) => {
           if (data) {

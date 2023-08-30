@@ -9,9 +9,9 @@ export default function TopbarDashboard() {
     <div className="Container-TopbarDashboard">
       <div className="Wrapper-TopbarDashboard">
         <div className="User-Info-TopbarDashboard">
-          <img src="../Image/ali.png" alt="user img" />
+          <img src="../Image/LOGO.png" alt="user img" />
           <div>
-            <h2>علی اسماعیلی</h2>
+            <h2>رویا تاران</h2>
             <h2>مدیر سایت</h2>
           </div>
         </div>

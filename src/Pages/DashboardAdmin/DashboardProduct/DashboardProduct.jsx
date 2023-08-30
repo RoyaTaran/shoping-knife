@@ -10,7 +10,7 @@ export default function DashboardProduct() {
   const DataProductContext = useContext(AllProductContext);
 
   const { posts } = useFetch(
-    "https://shoping-dc97f-default-rtdb.firebaseio.com//product.json",
+    "https://knifestore-83da9-default-rtdb.firebaseio.com/product.json",
     DataProductContext.getData
   );
 

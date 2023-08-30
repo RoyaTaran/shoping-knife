@@ -17,7 +17,7 @@ export default function UsersComponent() {
   const [showeditmodal, setShowEditmodal] = useState(false);
 
   const { posts } = useFetch(
-    "https://shoping-dc97f-default-rtdb.firebaseio.com//users.json",
+    "https://knifestore-83da9-default-rtdb.firebaseio.com/users.json",
     DataUsersContext.getuserData
   );
 
@@ -29,7 +29,7 @@ export default function UsersComponent() {
 
   let removeuser = async () => {
     await fetch(
-      `https://shoping-dc97f-default-rtdb.firebaseio.com//users/${userId}.json`,
+      `https://knifestore-83da9-default-rtdb.firebaseio.com/users/${userId}.json`,
       {
         method: "DELETE",
       }

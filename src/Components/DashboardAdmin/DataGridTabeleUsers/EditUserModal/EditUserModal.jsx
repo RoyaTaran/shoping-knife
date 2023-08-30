@@ -50,7 +50,7 @@ export default function EditUserModal(props) {
     };
 
     await fetch(
-      `https://shoping-dc97f-default-rtdb.firebaseio.com//users/${props.userId}.json`,
+      `https://knifestore-83da9-default-rtdb.firebaseio.com/users/${props.userId}.json`,
       {
         method: "PUT",
         body: JSON.stringify(NewUsersObj),
